@@ -1,0 +1,97 @@
+[20:38:24] [main/INFO]: Setting user: ForgeDevName
+[20:38:31] [Client thread/INFO]: LWJGL Version: 2.9.1
+[20:39:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Survival Tweaks
+[20:39:04] [Sound Library Loader/INFO]: Sound engine started
+[20:39:21] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:39:21] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:39:21] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Survival Tweaks
+[20:39:22] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:39:22] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:39:23] [Sound Library Loader/INFO]: Sound engine started
+[20:39:48] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[20:39:48] [Server thread/INFO]: Generating keypair
+[20:39:50] [Server thread/INFO]: Preparing start region for level 0
+[20:39:51] [Server thread/INFO]: Preparing spawn area: 2%
+[20:39:52] [Server thread/INFO]: Preparing spawn area: 44%
+[20:39:54] [Server thread/INFO]: Changing view distance to 5, from 10
+[20:39:54] [Server thread/INFO]: ForgeDevName[local:E:d8c80bcc] logged in with entity id 167 at (255.8941454254499, 71.0, 250.78937669494363)
+[20:39:54] [Server thread/INFO]: ForgeDevName joined the game
+[20:39:59] [Server thread/INFO]: [@: Block placed]
+[20:39:59] [Server thread/INFO]: [@: Block placed]
+[20:39:59] [Server thread/INFO]: [@: Block placed]
+[20:39:59] [Server thread/INFO]: [@: Block placed]
+[20:39:59] [Server thread/INFO]: [@: Block placed]
+[20:39:59] [Server thread/INFO]: [@: Block placed]
+[20:39:59] [Server thread/INFO]: [@: Block placed]
+[20:39:59] [Server thread/INFO]: [@: Block placed]
+[20:39:59] [Server thread/INFO]: [@: Block placed]
+[20:39:59] [Server thread/INFO]: [@: Block placed]
+[20:39:59] [Server thread/INFO]: [@: Block placed]
+[20:40:18] [Server thread/INFO]: [@: Block placed]
+[20:40:18] [Server thread/INFO]: [@: Block placed]
+[20:40:18] [Server thread/INFO]: [@: Block placed]
+[20:40:18] [Server thread/INFO]: [@: Block placed]
+[20:40:18] [Server thread/INFO]: [@: Block placed]
+[20:40:18] [Server thread/INFO]: [@: Block placed]
+[20:40:18] [Server thread/INFO]: [@: Block placed]
+[20:40:18] [Server thread/INFO]: [@: Block placed]
+[20:40:18] [Server thread/INFO]: [@: Block placed]
+[20:40:18] [Server thread/INFO]: [@: Block placed]
+[20:40:18] [Server thread/INFO]: [@: Block placed]
+[20:40:26] [Server thread/INFO]: [@: Block placed]
+[20:40:26] [Server thread/INFO]: [@: Block placed]
+[20:40:27] [Server thread/INFO]: [@: Block placed]
+[20:40:27] [Server thread/INFO]: [@: Block placed]
+[20:40:27] [Server thread/INFO]: [@: Block placed]
+[20:40:27] [Server thread/INFO]: [@: Block placed]
+[20:40:27] [Server thread/INFO]: [@: Block placed]
+[20:40:27] [Server thread/INFO]: [@: Block placed]
+[20:40:27] [Server thread/INFO]: [@: Block placed]
+[20:40:27] [Server thread/INFO]: [@: Block placed]
+[20:40:27] [Server thread/INFO]: [@: Block placed]
+[20:40:52] [Server thread/INFO]: [ForgeDevName: Given [Oak Wood] * 64 to ForgeDevName]
+[20:40:52] [Client thread/INFO]: [CHAT] Given [Oak Wood] * 64 to ForgeDevName
+[20:41:20] [Server thread/INFO]: [@: Block placed]
+[20:41:20] [Server thread/INFO]: [@: Block placed]
+[20:41:20] [Server thread/INFO]: [@: Block placed]
+[20:41:20] [Server thread/INFO]: [@: Block placed]
+[20:41:20] [Server thread/INFO]: [@: Block placed]
+[20:41:20] [Server thread/INFO]: [@: Block placed]
+[20:41:20] [Server thread/INFO]: [@: Block placed]
+[20:41:20] [Server thread/INFO]: [@: Block placed]
+[20:41:20] [Server thread/INFO]: [@: Block placed]
+[20:41:20] [Server thread/INFO]: [@: Block placed]
+[20:41:20] [Server thread/INFO]: [@: Block placed]
+[20:41:49] [Server thread/INFO]: [@: Block placed]
+[20:41:49] [Server thread/INFO]: [@: Block placed]
+[20:41:49] [Server thread/INFO]: [@: Block placed]
+[20:41:49] [Server thread/INFO]: [@: Block placed]
+[20:41:49] [Server thread/INFO]: [@: Block placed]
+[20:41:49] [Server thread/INFO]: [@: Block placed]
+[20:41:49] [Server thread/INFO]: [@: Block placed]
+[20:41:49] [Server thread/INFO]: [@: Block placed]
+[20:41:49] [Server thread/INFO]: [@: Block placed]
+[20:41:49] [Server thread/INFO]: [@: Block placed]
+[20:41:49] [Server thread/INFO]: [@: Block placed]
+[20:42:37] [Server thread/INFO]: [@: Block placed]
+[20:42:37] [Server thread/INFO]: [@: Block placed]
+[20:42:37] [Server thread/INFO]: [@: Block placed]
+[20:42:37] [Server thread/INFO]: [@: Block placed]
+[20:42:37] [Server thread/INFO]: [@: Block placed]
+[20:42:37] [Server thread/INFO]: [@: Block placed]
+[20:42:37] [Server thread/INFO]: [@: Block placed]
+[20:42:37] [Server thread/INFO]: [@: Block placed]
+[20:42:37] [Server thread/INFO]: [@: Block placed]
+[20:42:37] [Server thread/INFO]: [@: Block placed]
+[20:42:37] [Server thread/INFO]: [@: Block placed]
+[20:42:48] [Server thread/INFO]: Saving and pausing game...
+[20:42:48] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[20:42:48] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[20:42:48] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[20:42:49] [Server thread/INFO]: Stopping server
+[20:42:49] [Server thread/INFO]: Saving players
+[20:42:49] [Server thread/INFO]: Saving worlds
+[20:42:49] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[20:42:49] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[20:42:49] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[20:42:50] [Client thread/INFO]: Stopping!

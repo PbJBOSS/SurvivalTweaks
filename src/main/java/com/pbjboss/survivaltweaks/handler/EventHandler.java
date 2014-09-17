@@ -1,5 +1,7 @@
 package com.pbjboss.survivaltweaks.handler;
 
+import com.pbjboss.survivaltweaks.util.LogHelper;
+import com.sun.xml.internal.bind.v2.TODO;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -14,34 +16,40 @@ import net.minecraft.util.ChatComponentText;
 import net.minecraft.world.World;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.oredict.OreDictionary;
+import sun.security.krb5.Config;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class EventHandler
 {
-
-    ArrayList<Item> axes = new ArrayList();
-
     @SubscribeEvent
     public void onBlockBreak(BlockEvent.BreakEvent e)
     {
-        int drops = ((int) Math.floor(Math.random() * 100));
-        if (e.block == Blocks.leaves)
+        if (ConfigurationHandler.leavesDropSticks)
         {
-            if (drops < 50)
+            int drops = ((int) Math.floor(Math.random() * 100));
+            if (e.block == Blocks.leaves)
             {
-            }
+                int chanceOfDropping = ConfigurationHandler.leavesDrop1StickPercent + ConfigurationHandler.leavesDrop2SticksPercent;
+                int chanceOfNotDropping = 100 - chanceOfDropping;
+                System.out.println(drops);
+                if (drops < chanceOfNotDropping)
+                {
+                    LogHelper.info("0 Stick");
 
-            if (drops > 49 && drops < 80)
-            {
-                e.world.spawnEntityInWorld(new EntityItem(e.world, e.x, e.y, e.z, new ItemStack(Items.stick)));
-            }
+                }else if (drops < chanceOfNotDropping + ConfigurationHandler.leavesDrop1StickPercent)
+                {
+                    LogHelper.info("1 Stick");
 
-            if (drops > 80)
-            {
-                e.world.spawnEntityInWorld(new EntityItem(e.world, e.x, e.y, e.z, new ItemStack(Items.stick)));
-                e.world.spawnEntityInWorld(new EntityItem(e.world, e.x, e.y, e.z, new ItemStack(Items.stick)));
+                    e.world.spawnEntityInWorld(new EntityItem(e.world, e.x, e.y, e.z, new ItemStack(Items.stick)));
+                }else if (drops < chanceOfNotDropping + ConfigurationHandler.leavesDrop1StickPercent + ConfigurationHandler.leavesDrop2SticksPercent)
+                {
+                    LogHelper.info("2 Stick");
+
+                    e.world.spawnEntityInWorld(new EntityItem(e.world, e.x, e.y, e.z, new ItemStack(Items.stick)));
+                    e.world.spawnEntityInWorld(new EntityItem(e.world, e.x, e.y, e.z, new ItemStack(Items.stick)));
+                }
             }
         }
 
@@ -51,26 +59,39 @@ public class EventHandler
     @SubscribeEvent
     public void onHarvestBlock(BlockEvent.HarvestDropsEvent e)
     {
-        if (e.block == Blocks.log)
+        if (!ConfigurationHandler.canHarvestWood)
         {
-            if (e.harvester != null)
+            if (e.block == Blocks.log)
             {
-                EntityPlayer player = e.harvester;
-                if (player != null)
+                if (e.harvester != null)
                 {
-                    if (player.getHeldItem() != null)
+                    EntityPlayer player = e.harvester;
+                    if (player != null)
                     {
-                        ItemStack heldStack = player.getHeldItem();
+                        if (player.getHeldItem() != null)
+                        {
+                            ItemStack heldStack = player.getHeldItem();
 
-                        if (heldStack.getItem() != Items.wooden_axe && heldStack.getItem() != Items.stone_axe && heldStack.getItem() != Items.iron_axe && heldStack.getItem() != Items.diamond_axe)
+                            if (heldStack.getItem() != Items.wooden_axe && heldStack.getItem() != Items.stone_axe && heldStack.getItem() != Items.iron_axe && heldStack.getItem() != Items.diamond_axe)
+                            {
+                                e.drops.clear();
+                            }
+                        } else
                         {
                             e.drops.clear();
                         }
-                    }else{
-                        e.drops.clear();
                     }
                 }
             }
         }
     }
+//TODO add two use axe event
+    /**@SubscribeEvent
+    public void onAxeUseEvent()
+    {
+        if (!ConfigurationHandler.axeOneUse)
+        {
+
+        }
+    }**/
 }
